@@ -12,6 +12,10 @@ Configurar o Código Arduino: No código Arduino (sketch.ino), substitua "IP_DO_
 
 Carregar o Código Arduino no Dispositivo: Carregue o código Arduino em um dispositivo compatível, como o DigiSpark, utilizando a IDE do Arduino.
 
+Configurar um servidor (ex: netcat) para ouvir na porta especificada.
+
+Nesse exemplo poderiamos usar o : nc -lnvp 4444
+
 Funcionamento:
 
 O script PowerShell (payload.ps1) é responsável por baixar e executar o Socat, uma ferramenta de rede que estabelece conexões bidirecionais entre dois pontos finais. Ele é baixado de uma URL específica fornecida pelo atacante. Após o download, o Socat é descompactado e iniciado em segundo plano, configurado para se conectar ao endereço IP e à porta especificados pelo atacante. Quando a conexão é estabelecida, é iniciado um shell do Windows (cmd.exe), que fica disponível para execução de comandos remotos.
