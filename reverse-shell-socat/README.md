@@ -4,9 +4,13 @@ Este programa tem como objetivo automatizar a execução de um ataque de backdoo
 
 -Como Configurar:
 1- Definir o IP do Atacante: No script PowerShell (payload.ps1), substitua "IP_DO_ATACANTE" pelo endereço IP do servidor controlado pelo atacante.
+
 2- Carregar o Script PowerShell no Servidor: Faça o upload do arquivo payload.ps1 para um servidor web acessível ao sistema alvo. Certifique-se de que o Socat esteja disponível para download no mesmo local.
+
 3- Configurar o Código Arduino: No código Arduino (reverse-shell-socat.ino), substitua "IP_DO_ATACANTE" pela mesma URL usada no script PowerShell.
+
 4- Carregar o Código Arduino no Dispositivo: Carregue o código Arduino em um dispositivo compatível, como o DigiSpark, utilizando a IDE do Arduino.
+
 5- Configurar um servidor (ex: netcat) para ouvir na porta especificada.
     Nesse exemplo podemos usar o : nc -lnvp 4444
 
